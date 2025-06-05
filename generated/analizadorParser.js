@@ -1,7 +1,9 @@
-// Generated from analizador.g4 by ANTLR 4.13.2
+// Generated from c:/Users/Martin.L/Desktop/UTN/segundo/Sintaxis/Analizador-7/analizador.g4 by ANTLR 4.13.2
 // jshint ignore: start
 import antlr4 from 'antlr4';
 import analizadorListener from './analizadorListener.js';
+import analizadorVisitor from './analizadorVisitor.js';
+
 const serializedATN = [4,1,14,79,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,
 2,5,7,5,2,6,7,6,2,7,7,7,2,8,7,8,2,9,7,9,2,10,7,10,1,0,1,0,1,1,1,1,1,1,1,
 1,1,1,5,1,30,8,1,10,1,12,1,33,9,1,1,2,1,2,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,
@@ -519,6 +521,14 @@ class ProgramaContext extends antlr4.ParserRuleContext {
 		}
 	}
 
+	accept(visitor) {
+	    if ( visitor instanceof analizadorVisitor ) {
+	        return visitor.visitPrograma(this);
+	    } else {
+	        return visitor.visitChildren(this);
+	    }
+	}
+
 
 }
 
@@ -558,6 +568,14 @@ class InstruccionesContext extends antlr4.ParserRuleContext {
 		}
 	}
 
+	accept(visitor) {
+	    if ( visitor instanceof analizadorVisitor ) {
+	        return visitor.visitInstrucciones(this);
+	    } else {
+	        return visitor.visitChildren(this);
+	    }
+	}
+
 
 }
 
@@ -591,6 +609,14 @@ class InstruccionContext extends antlr4.ParserRuleContext {
 	    if(listener instanceof analizadorListener ) {
 	        listener.exitInstruccion(this);
 		}
+	}
+
+	accept(visitor) {
+	    if ( visitor instanceof analizadorVisitor ) {
+	        return visitor.visitInstruccion(this);
+	    } else {
+	        return visitor.visitChildren(this);
+	    }
 	}
 
 
@@ -630,6 +656,14 @@ class BucleContext extends antlr4.ParserRuleContext {
 	    if(listener instanceof analizadorListener ) {
 	        listener.exitBucle(this);
 		}
+	}
+
+	accept(visitor) {
+	    if ( visitor instanceof analizadorVisitor ) {
+	        return visitor.visitBucle(this);
+	    } else {
+	        return visitor.visitChildren(this);
+	    }
 	}
 
 
@@ -675,6 +709,14 @@ class SentenciaContext extends antlr4.ParserRuleContext {
 		}
 	}
 
+	accept(visitor) {
+	    if ( visitor instanceof analizadorVisitor ) {
+	        return visitor.visitSentencia(this);
+	    } else {
+	        return visitor.visitChildren(this);
+	    }
+	}
+
 
 }
 
@@ -710,6 +752,14 @@ class SalidaContext extends antlr4.ParserRuleContext {
 		}
 	}
 
+	accept(visitor) {
+	    if ( visitor instanceof analizadorVisitor ) {
+	        return visitor.visitSalida(this);
+	    } else {
+	        return visitor.visitChildren(this);
+	    }
+	}
+
 
 }
 
@@ -742,6 +792,14 @@ class TerminarContext extends antlr4.ParserRuleContext {
 		}
 	}
 
+	accept(visitor) {
+	    if ( visitor instanceof analizadorVisitor ) {
+	        return visitor.visitTerminar(this);
+	    } else {
+	        return visitor.visitChildren(this);
+	    }
+	}
+
 
 }
 
@@ -772,6 +830,14 @@ class CondicionContext extends antlr4.ParserRuleContext {
 	    if(listener instanceof analizadorListener ) {
 	        listener.exitCondicion(this);
 		}
+	}
+
+	accept(visitor) {
+	    if ( visitor instanceof analizadorVisitor ) {
+	        return visitor.visitCondicion(this);
+	    } else {
+	        return visitor.visitChildren(this);
+	    }
 	}
 
 
@@ -807,6 +873,14 @@ class CadenaContext extends antlr4.ParserRuleContext {
 	    if(listener instanceof analizadorListener ) {
 	        listener.exitCadena(this);
 		}
+	}
+
+	accept(visitor) {
+	    if ( visitor instanceof analizadorVisitor ) {
+	        return visitor.visitCadena(this);
+	    } else {
+	        return visitor.visitChildren(this);
+	    }
 	}
 
 
@@ -846,6 +920,14 @@ class CaracteresContext extends antlr4.ParserRuleContext {
 	    if(listener instanceof analizadorListener ) {
 	        listener.exitCaracteres(this);
 		}
+	}
+
+	accept(visitor) {
+	    if ( visitor instanceof analizadorVisitor ) {
+	        return visitor.visitCaracteres(this);
+	    } else {
+	        return visitor.visitChildren(this);
+	    }
 	}
 
 
@@ -889,6 +971,14 @@ class CaracterContext extends antlr4.ParserRuleContext {
 	    if(listener instanceof analizadorListener ) {
 	        listener.exitCaracter(this);
 		}
+	}
+
+	accept(visitor) {
+	    if ( visitor instanceof analizadorVisitor ) {
+	        return visitor.visitCaracter(this);
+	    } else {
+	        return visitor.visitChildren(this);
+	    }
 	}
 
 
